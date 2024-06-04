@@ -15,12 +15,16 @@ namespace PDC03FinalProject.Views
         public MainPage()
         {
             InitializeComponent();
-            var button = new Button { Text = "Go to Action List" };
-            button.Clicked += async (sender, e) => await Navigation.PushAsync(new ActionListPage());
-            Content = new StackLayout
-            {
-                Children = { button }
-            };
+        }
+
+        private async void Btn_Nav_ActionListPage (object sender, EventArgs e)
+        {
+            await Navigation.PushAsync (new ActionListPage());
+        }
+
+        private async void Btn_Nav_SustainActivityPage (object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MySustainActivityPage());
         }
     }
 }

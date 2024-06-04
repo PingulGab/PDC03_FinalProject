@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03FinalProject.Views.MySustainActivityLogsPage"
+             Title="My SustainActivity Logs">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="UserActivityLogsListView"
+                      ItemsSource="{Binding UserActivityLogs}"
+                      ItemTapped="OnUserActivityLogTapped"
+                      RowHeight="100">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <Image Source="{Binding ImageUrl}" WidthRequest="50" HeightRequest="50" />
+                                <StackLayout Orientation="Vertical" Padding="10">
+                                    <Label Text="{Binding ActivityName}" FontAttributes="Bold" />
+                                    <Label Text="{Binding ActivityDescription}" />
+                                    <Label Text="{Binding UserActivityLength}" />
+                                    <Label Text="{Binding UserActivitySaved}" />
+                                    <Label Text="{Binding UserActivityDate, StringFormat='{0:MM/dd/yyyy}'}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

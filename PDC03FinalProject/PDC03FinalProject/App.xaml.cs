@@ -15,7 +15,7 @@ namespace PDC03FinalProject
             InitializeComponent();
 
             // Register the DatabaseService as a singleton
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SustainActions.db3");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Test1.db3");
             DependencyService.RegisterSingleton(new DatabaseService(dbPath));
 
             MainPage = new NavigationPage(new MainPage());

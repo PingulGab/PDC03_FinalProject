@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PDC03FinalProject.ViewModels"
+             x:Class="PDC03FinalProject.Views.MySustainActivityPage"
+             x:Name="activityPage">
+
+    <ContentPage.BindingContext>
+        <vm:MySustainActivityViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker ItemsSource="{Binding Categories}"
+                    SelectedItem="{Binding SelectedCategory}" 
+                    Title="Select Category"/>
+            <Button Text="My SustainActivity Logs" 
+                    Command="{Binding NavigateToLogsCommand}"/>
+            <CollectionView ItemsSource="{Binding Activities}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding ImageUrl}" WidthRequest="50" HeightRequest="50" Aspect="AspectFill" Grid.Column="0"/>
+                            <Button Text="{Binding ActivityName}" 
+                                    Command="{Binding BindingContext.ActivitySelectedCommand, Source={x:Reference activityPage}}"
+                                    CommandParameter="{Binding .}"
+                                    Grid.Column="1"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

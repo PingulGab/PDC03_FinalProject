@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PDC03FinalProject.Views"
+             x:Class="PDC03FinalProject.Views.UserActivityDetailPage"
+             Title="Activity Detail">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Activity Name" FontAttributes="Bold"/>
+            <Label Text="{Binding UserActivity.ActivityName}"/>
+            <Label Text="Activity Description" FontAttributes="Bold"/>
+            <Label Text="{Binding UserActivity.ActivityDescription}"/>
+            <Label Text="Saved Per Minute" FontAttributes="Bold"/>
+            <Label Text="{Binding UserActivity.ActivitySavedPerMinute}"/>
+            <Label Text="Measurement" FontAttributes="Bold"/>
+            <Label Text="{Binding UserActivity.ActivityMeasurement}"/>
+            <Label Text="Date" FontAttributes="Bold"/>
+            <Label Text="{Binding UserActivity.UserActivityDate, StringFormat='{0:MM/dd/yyyy}'}"/>
+            <Label Text="Length (Minutes)" FontAttributes="Bold"/>
+            <Entry Text="{Binding UserActivityLength}" Keyboard="Numeric"/>
+            <Label Text="Saved" FontAttributes="Bold"/>
+            <Label Text="{Binding UserActivity.UserActivitySavedText}"/>
+
+            <Button Text="Save" Command="{Binding SaveCommand}"/>
+            <Button Text="Delete" Command="{Binding DeleteCommand}" TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

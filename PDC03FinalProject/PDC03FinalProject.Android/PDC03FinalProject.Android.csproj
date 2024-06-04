@@ -115,13 +115,16 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable\" />
+    <AndroidResource Include="Resources\drawable\Water_Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PDC03FinalProject\PDC03FinalProject.csproj">
       <Project>{61AA29AD-9147-4126-A9B6-38D232817B9B}</Project>
       <Name>PDC03FinalProject</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\water_bath.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

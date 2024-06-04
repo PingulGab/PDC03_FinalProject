@@ -15,3 +15,7 @@ C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstan
 C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\PDC03FinalProject.dll
 C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\refint\PDC03FinalProject.dll
 C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\PDC03FinalProject.pdb
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\Views\MySustainActivityLogsPage.xaml.g.cs
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\Views\MySustainActivityPage.xaml.g.cs
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\PDC03FinalProject.sourcelink.json
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\Views\UserActivityDetailPage.xaml.g.cs
