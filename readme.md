@@ -9,3 +9,6 @@
 > - Added Activity Log Page (SustainActivity Log) Page.
 > - Added CRUD function for the Activity Log Page.
 > - Prototype Images for Handbook, Activity, and Activity Log Page.
+
+**Third Commit**
+> - Added a Read.me
