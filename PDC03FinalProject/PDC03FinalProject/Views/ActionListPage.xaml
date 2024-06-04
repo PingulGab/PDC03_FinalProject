@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PDC03FinalProject.ViewModels"
+             x:Class="PDC03FinalProject.Views.ActionListPage">
+
+    <ContentPage.BindingContext>
+        <local:ActionItemViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <Picker Title="Select Category"
+                ItemsSource="{Binding Categories}"
+                SelectedItem="{Binding SelectedCategory}"
+                SelectedIndex="0" />
+        
+        <Label Text="This category has no entry."
+               IsVisible="{Binding IsNoResultsVisible}"
+               FontSize="Medium"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Start"/>
+        
+        <ListView ItemsSource="{Binding ActionItems}"
+                  ItemTapped="OnItemTapped"
+                  SelectionMode="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding ImageSource}" WidthRequest="50" HeightRequest="50" />
+                            <StackLayout VerticalOptions="Center">
+                                <Label Text="{Binding Title}" />
+                                <Label Text="{Binding ActionCode}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Add New Item" Command="{Binding AddNewItemCommand}" />
+    </StackLayout>
+</ContentPage>

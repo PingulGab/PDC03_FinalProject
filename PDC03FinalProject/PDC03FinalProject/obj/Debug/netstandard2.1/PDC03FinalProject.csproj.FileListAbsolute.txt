@@ -1,0 +1,17 @@
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\bin\Debug\netstandard2.1\PDC03FinalProject.deps.json
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\bin\Debug\netstandard2.1\PDC03FinalProject.dll
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\bin\Debug\netstandard2.1\ref\PDC03FinalProject.dll
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\bin\Debug\netstandard2.1\PDC03FinalProject.pdb
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\PDC03FinalProject.csproj.AssemblyReference.cache
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\PDC03FinalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\Views\ActionListPage.xaml.g.cs
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\Views\DetailPage.xaml.g.cs
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\Views\MainPage.xaml.g.cs
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\PDC03FinalProject.AssemblyInfoInputs.cache
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\PDC03FinalProject.AssemblyInfo.cs
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\PDC03FinalProject.csproj.CoreCompileInputs.cache
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\XamlC.stamp
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\PDC03FinalProject.dll
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\refint\PDC03FinalProject.dll
+C:\repos\PDC03FinalProject\PDC03FinalProject\PDC03FinalProject\obj\Debug\netstandard2.1\PDC03FinalProject.pdb

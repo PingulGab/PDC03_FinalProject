@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PDC03FinalProject.ViewModels"
+             xmlns:local1="clr-namespace:PDC03FinalProject.Converter"
+             x:Class="PDC03FinalProject.Views.DetailPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local1:InvertedBooleanConverter x:Key="InvertedBooleanConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="10">
+        <Label Text="Action Code"
+               FontAttributes="Bold" />
+        <Label Text="{Binding ActionItem.ActionCode}" />
+
+        <Label Text="Title"
+               FontAttributes="Bold" />
+        <!-- Shown for: Original Entry --> <Label Text="{Binding ActionItem.Title}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <!-- Shown for: User Entry --> <Entry Text="{Binding ActionItem.Title}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+
+        <Label Text="Description"
+               FontAttributes="Bold" />
+        <!-- Shown for: Original Entry --> <Label Text="{Binding ActionItem.Description}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <!-- Shown for: User Entry --> <Editor Text="{Binding ActionItem.Description}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+
+        <Label Text="Category"
+               FontAttributes="Bold" />
+        <Label Text="{Binding ActionItem.Category}" />
+
+        <Label Text="Impact Level"
+               FontAttributes="Bold" />
+        <!-- Shown for: Original Entry --> <Label Text="{Binding ActionItem.ImpactLevel}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <!-- Shown for: User Entry --> <Entry Text="{Binding ActionItem.ImpactLevel}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+
+        <Label Text="Frequency"
+               FontAttributes="Bold" />
+        <!-- Shown for: Original Entry --> <Label Text="{Binding ActionItem.Frequency}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <!-- Shown for: User Entry --> <Entry Text="{Binding ActionItem.Frequency}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+
+        <Label Text="This is an original and certified entry in the handbook. You may only edit and delete entries that you have manually entered." 
+               FontAttributes="Bold"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="Medium"
+               HorizontalTextAlignment="Center"
+               IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}" />
+
+
+        <Button Text="Save" Command="{Binding SaveCommand}" IsVisible="{Binding ActionItem.IsUserCreated}" />
+        <Button Text="Delete" Command="{Binding DeleteCommand}" IsVisible="{Binding ActionItem.IsUserCreated}" />
+    </StackLayout>
+</ContentPage>
