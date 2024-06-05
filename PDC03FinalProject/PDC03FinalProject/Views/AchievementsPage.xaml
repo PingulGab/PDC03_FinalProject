@@ -18,14 +18,30 @@
 
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="{Binding AchievementCounter}" FontAttributes="Bold" HorizontalOptions="Center" />
             <CollectionView ItemsSource="{Binding Achievements}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Padding="10">
-                            <Label Text="{Binding AchievementTitle}" FontAttributes="Bold" />
-                            <Label Text="{Binding AchievementDescription}" />
-                            <Image Source="{Binding ., Converter={StaticResource AchievementStatusConverter}}" />
-                        </StackLayout>
+                        <Grid Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Source="{Binding ., Converter={StaticResource AchievementStatusConverter}}" HorizontalOptions="Center">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding BindingContext.ShowAchievementDetailsCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" CommandParameter="{Binding .}" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding AchievementTitle}" HorizontalOptions="Center">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding BindingContext.ShowAchievementDetailsCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" CommandParameter="{Binding .}" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

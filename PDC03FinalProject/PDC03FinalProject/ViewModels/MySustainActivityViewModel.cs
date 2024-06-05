@@ -82,7 +82,7 @@ namespace PDC03FinalProject.ViewModels
 
         private async Task OnActivitySelected(Activity activity)
         {
-            var result = await App.Current.MainPage.DisplayPromptAsync("Enter Time", "Enter the time in minutes:");
+            var result = await App.Current.MainPage.DisplayPromptAsync("Enter Time", "Enter the time in minutes:", keyboard: Keyboard.Numeric);
 
             // Validate the entered time
             if (!double.TryParse(result, out double minutes))

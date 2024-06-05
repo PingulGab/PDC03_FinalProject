@@ -1,4 +1,9 @@
-﻿// Views->AchievementsPage.xaml.cs
+﻿using PDC03FinalProject.Models;
+using System;
+using System.IO;
+using System.Reflection;
+using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,5 +16,6 @@ namespace PDC03FinalProject.Views
         {
             InitializeComponent();
         }
+
     }
 }
