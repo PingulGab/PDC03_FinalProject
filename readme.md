@@ -27,3 +27,6 @@
 
 **Seventh Commit**
 > - Added Functionality: Download Achievement Image.
+
+**Eigth Commit**
+> - Added Functionality: Download option is shown only when the Achievement is *Unlocked*.

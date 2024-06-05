@@ -45,6 +45,12 @@ namespace PDC03FinalProject.ViewModels
 
         private async void ShowAchievementDetails(Achievement achievement)
         {
+            if (!achievement.AchievementStatus)
+            {
+                await Application.Current.MainPage.DisplayAlert(achievement.AchievementTitle, achievement.AchievementDescription, "OK");
+                return;
+            }
+
             bool download = await Application.Current.MainPage.DisplayAlert(achievement.AchievementTitle, achievement.AchievementDescription, "Download Image", "Cancel");
             if (download)
             {

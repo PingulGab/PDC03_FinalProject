@@ -3,7 +3,7 @@ using System.Globalization;
 using Xamarin.Forms;
 using PDC03FinalProject.Models;
 
-namespace PDC03FinalProject.Converters
+namespace PDC03FinalProject.Converter
 {
     public class AchievementStatusConverter : IValueConverter
     {

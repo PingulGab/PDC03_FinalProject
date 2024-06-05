@@ -2,13 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:PDC03FinalProject.ViewModels"
-             xmlns:converter="clr-namespace:PDC03FinalProject.Converters"
+             xmlns:converter="clr-namespace:PDC03FinalProject.Converter"
              x:Class="PDC03FinalProject.Views.AchievementsPage"
              Title="Achievements">
 
     <ContentPage.Resources>
         <ResourceDictionary>
             <converter:AchievementStatusConverter x:Key="AchievementStatusConverter"/>
+            <converter:AchievementImageVisibilityConverter x:Key="AchievementImageVisibilityConverter"/>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -20,28 +21,28 @@
         <StackLayout>
             <Label Text="{Binding AchievementCounter}" FontAttributes="Bold" HorizontalOptions="Center" />
             <CollectionView ItemsSource="{Binding Achievements}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2" />
+                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid Padding="10">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Source="{Binding ., Converter={StaticResource AchievementStatusConverter}}" HorizontalOptions="Center">
+                        <StackLayout Padding="10">
+                            <Image Source="{Binding ., Converter={StaticResource AchievementStatusConverter}}" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100">
                                 <Image.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding BindingContext.ShowAchievementDetailsCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" CommandParameter="{Binding .}" />
                                 </Image.GestureRecognizers>
                             </Image>
-                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding AchievementTitle}" HorizontalOptions="Center">
+                            <Label Text="{Binding AchievementTitle}" HorizontalOptions="Center">
                                 <Label.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding BindingContext.ShowAchievementDetailsCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" CommandParameter="{Binding .}" />
                                 </Label.GestureRecognizers>
                             </Label>
-                        </Grid>
+                            <Label Text="Download" IsVisible="{Binding AchievementStatus}" HorizontalOptions="Center">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding BindingContext.ShowAchievementDetailsCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" CommandParameter="{Binding .}" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
