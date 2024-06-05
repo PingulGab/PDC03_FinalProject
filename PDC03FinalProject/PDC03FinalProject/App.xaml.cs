@@ -2,9 +2,7 @@
 using PDC03FinalProject.Views;
 using System;
 using System.IO;
-using System.Threading.Tasks;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace PDC03FinalProject
 {
@@ -15,8 +13,9 @@ namespace PDC03FinalProject
             InitializeComponent();
 
             // Register the DatabaseService as a singleton
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Test1.db3");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Test12.db3");
             DependencyService.RegisterSingleton(new DatabaseService(dbPath));
+            DependencyService.Register<AchievementService>();
 
             MainPage = new NavigationPage(new MainPage());
         }
@@ -31,5 +30,4 @@ namespace PDC03FinalProject
 
         protected override void OnResume() { }
     }
-
 }

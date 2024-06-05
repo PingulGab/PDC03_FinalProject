@@ -18,13 +18,17 @@
 
         <Label Text="Title"
                FontAttributes="Bold" />
-        <!-- Shown for: Original Entry --> <Label Text="{Binding ActionItem.Title}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
-        <!-- Shown for: User Entry --> <Entry Text="{Binding ActionItem.Title}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+        <!-- Shown for: Original Entry -->
+        <Label Text="{Binding ActionItem.Title}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <!-- Shown for: User Entry -->
+        <Entry Text="{Binding ActionItem.Title}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
 
         <Label Text="Description"
                FontAttributes="Bold" />
-        <!-- Shown for: Original Entry --> <Label Text="{Binding ActionItem.Description}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
-        <!-- Shown for: User Entry --> <Editor Text="{Binding ActionItem.Description}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+        <!-- Shown for: Original Entry -->
+        <Label Text="{Binding ActionItem.Description}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <!-- Shown for: User Entry -->
+        <Editor Text="{Binding ActionItem.Description}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
 
         <Label Text="Category"
                FontAttributes="Bold" />
@@ -32,13 +36,17 @@
 
         <Label Text="Impact Level"
                FontAttributes="Bold" />
-        <!-- Shown for: Original Entry --> <Label Text="{Binding ActionItem.ImpactLevel}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
-        <!-- Shown for: User Entry --> <Entry Text="{Binding ActionItem.ImpactLevel}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+        <!-- Shown for: Original Entry -->
+        <Label Text="{Binding ActionItem.ImpactLevel}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <!-- Shown for: User Entry -->
+        <Entry Text="{Binding ActionItem.ImpactLevel}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
 
         <Label Text="Frequency"
                FontAttributes="Bold" />
-        <!-- Shown for: Original Entry --> <Label Text="{Binding ActionItem.Frequency}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
-        <!-- Shown for: User Entry --> <Entry Text="{Binding ActionItem.Frequency}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+        <!-- Shown for: Original Entry -->
+        <Label Text="{Binding ActionItem.Frequency}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <!-- Shown for: User Entry -->
+        <Entry Text="{Binding ActionItem.Frequency}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
 
         <Label Text="This is an original and certified entry in the handbook. You may only edit and delete entries that you have manually entered." 
                FontAttributes="Bold"

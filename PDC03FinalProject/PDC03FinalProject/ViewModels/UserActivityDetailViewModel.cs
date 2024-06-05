@@ -1,6 +1,8 @@
 ﻿using MvvmHelpers;
 using PDC03FinalProject.Models;
 using PDC03FinalProject.Services;
+using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
@@ -58,6 +60,7 @@ namespace PDC03FinalProject.ViewModels
             OnPropertyChanged(nameof(UserActivity));
             OnPropertyChanged(nameof(UserActivity.UserActivitySavedText));
 
+            
             MessagingCenter.Send(this, "UserActivitySaved");
 
             await Application.Current.MainPage.DisplayAlert("Saved", "The activity has been updated.", "OK");

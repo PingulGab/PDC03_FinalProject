@@ -16,6 +16,7 @@ namespace PDC03FinalProject.ViewModels
     public class MySustainActivityViewModel : BindableObject
     {
         private readonly DatabaseService _databaseService;
+        private readonly AchievementService _achievementService;
         private string _selectedCategory;
 
         public ObservableCollection<Activity> Activities { get; set; }
@@ -38,6 +39,7 @@ namespace PDC03FinalProject.ViewModels
         public MySustainActivityViewModel()
         {
             _databaseService = DependencyService.Get<DatabaseService>();
+            _achievementService = DependencyService.Get<AchievementService>();
             Activities = new ObservableCollection<Activity>();
             Categories = new ObservableCollection<string> { "None", "Water", "Energy", "Gas", "Waste" };
             SelectedCategory = "None";
@@ -98,9 +100,12 @@ namespace PDC03FinalProject.ViewModels
             };
 
             await _databaseService.SaveUserActivityAsync(userActivity);
+
+            // Check for achievements after saving the user activity
+            await _achievementService.CheckForAchievements(userActivity);
+
             await App.Current.MainPage.DisplayAlert("Wonderful!", $"You have saved {userActivity.UserActivitySaved} {activity.ActivityMeasurement}", "OK");
         }
-
         private async Task OnNavigateToLogs()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new MySustainActivityLogsPage());

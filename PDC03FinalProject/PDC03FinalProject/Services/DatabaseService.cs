@@ -18,6 +18,7 @@ namespace PDC03FinalProject.Services
             _database.CreateTableAsync<ActivityCategory>().Wait();
             _database.CreateTableAsync<Activity>().Wait();
             _database.CreateTableAsync<UserActivity>().Wait();
+            _database.CreateTableAsync<Achievement>().Wait();
         }
 
 
@@ -159,6 +160,29 @@ namespace PDC03FinalProject.Services
             return await _database.DeleteAsync(userActivity);
         }
 
+        // Achievement Methods
+        public Task<List<Achievement>> GetAchievementsAsync()
+        {
+            return _database.Table<Achievement>().ToListAsync();
+        }
+
+        public Task<int> SaveAchievementAsync(Achievement achievement)
+        {
+            if (achievement.AchievementID != 0)
+            {
+                return _database.UpdateAsync(achievement);
+            }
+            else
+            {
+                return _database.InsertAsync(achievement);
+            }
+        }
+
+        public Task<int> DeleteAchievementAsync(Achievement achievement)
+        {
+            return _database.DeleteAsync(achievement);
+        }
+
         // Global Methods: Methods For All Tables
         public async Task InitializeDatabaseAsync()
         {
@@ -208,6 +232,22 @@ namespace PDC03FinalProject.Services
                 if (existingActivity == null)
                 {
                     await _database.InsertAsync(activity);
+                }
+            }
+
+            // Predefined achievements
+            var predefinedAchievements = new List<Achievement>
+            {
+                new Achievement { AchievementTitle = "1 Week Straight Bath", AchievementDescription = "Add 'Baths is to Water' activity for 1 week straight.", AchievementImage = "one_week_straight_bath.png", AchievementStatus = false },
+                new Achievement { AchievementTitle = "Save 10,000 Liters of Water", AchievementDescription = "Save a total of 10,000 liters of water using 'Baths is to Water'.", AchievementImage = "water_bath.png", AchievementStatus = false }
+            };
+
+            foreach (var achievement in predefinedAchievements)
+            {
+                var existingAchievement = await _database.Table<Achievement>().Where(a => a.AchievementTitle == achievement.AchievementTitle).FirstOrDefaultAsync();
+                if (existingAchievement == null)
+                {
+                    await _database.InsertAsync(achievement);
                 }
             }
         }

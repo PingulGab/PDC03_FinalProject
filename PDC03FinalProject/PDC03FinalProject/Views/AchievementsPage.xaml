@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PDC03FinalProject.ViewModels"
+             xmlns:converter="clr-namespace:PDC03FinalProject.Converters"
+             x:Class="PDC03FinalProject.Views.AchievementsPage"
+             Title="Achievements">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:AchievementStatusConverter x:Key="AchievementStatusConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <vm:AchievementsViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding Achievements}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding AchievementTitle}" FontAttributes="Bold" />
+                            <Label Text="{Binding AchievementDescription}" />
+                            <Image Source="{Binding ., Converter={StaticResource AchievementStatusConverter}}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

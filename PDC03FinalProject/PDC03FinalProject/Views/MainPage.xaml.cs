@@ -17,14 +17,19 @@ namespace PDC03FinalProject.Views
             InitializeComponent();
         }
 
-        private async void Btn_Nav_ActionListPage (object sender, EventArgs e)
+        private async void Btn_Nav_ActionListPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync (new ActionListPage());
+            await Navigation.PushAsync(new ActionListPage());
         }
 
-        private async void Btn_Nav_SustainActivityPage (object sender, EventArgs e)
+        private async void Btn_Nav_SustainActivityPage(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MySustainActivityPage());
+        }
+
+        private async void Btn_Nav_AchievementsPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AchievementsPage());
         }
     }
 }
