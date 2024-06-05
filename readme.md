@@ -11,6 +11,7 @@
 > - Prototype Images for Handbook, Activity, and Activity Log Page.
 
 **Third Commit**
+<<<<<<< HEAD
 > - Added a Readme.md
 
 **Fourth Commit**
@@ -21,3 +22,6 @@
 > - Added Achievement Page.
 > - Added Functionality: Automatic Achievement per UserActivity.
 > - Added Functionality: Image is unlocked after user has acquired the corresponding Achievement.
+=======
+> - Added a Read.me
+>>>>>>> a6552bd94e73d0933583172ae43814235e38ec90
