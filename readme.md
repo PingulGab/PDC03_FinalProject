@@ -30,3 +30,6 @@
 
 **Eigth Commit**
 > - Added Functionality: Download option is shown only when the Achievement is *Unlocked*.
+
+**Ninth Commit**
+> - Added Functionality: Filtering of Achievements.

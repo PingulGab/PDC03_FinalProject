@@ -19,7 +19,24 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding AchievementCounter}" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Picker ItemsSource="{Binding Categories}"
+                    SelectedItem="{Binding SelectedCategory}" 
+                    Title="Select Category"/>
+
+            <Label Text="{Binding AchievementCounter}" FontAttributes="Bold" HorizontalOptions="Center">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" Binding="{Binding SelectedCategory}" Value="None">
+                        <Setter Property="IsVisible" Value="True"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding SelectedCategory}" Value="{x:Null}">
+                        <Setter Property="IsVisible" Value="False"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Label" Binding="{Binding SelectedCategory}">
+                        <Setter Property="IsVisible" Value="False"/>
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
             <CollectionView ItemsSource="{Binding Achievements}">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical" Span="2" />
@@ -33,11 +50,6 @@
                                 </Image.GestureRecognizers>
                             </Image>
                             <Label Text="{Binding AchievementTitle}" HorizontalOptions="Center">
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding BindingContext.ShowAchievementDetailsCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" CommandParameter="{Binding .}" />
-                                </Label.GestureRecognizers>
-                            </Label>
-                            <Label Text="Download" IsVisible="{Binding AchievementStatus}" HorizontalOptions="Center">
                                 <Label.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding BindingContext.ShowAchievementDetailsCommand, Source={RelativeSource AncestorType={x:Type ContentPage}}}" CommandParameter="{Binding .}" />
                                 </Label.GestureRecognizers>

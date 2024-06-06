@@ -11,6 +11,8 @@
             <Button Text="Go to Action List" Clicked="Btn_Nav_ActionListPage"/>
             <Button Text="Go to MySustainActivity" Clicked="Btn_Nav_SustainActivityPage"/>
             <Button Text="Go to Achievements" Clicked="Btn_Nav_AchievementsPage"/>
+
+            <Button Text="Show Nav" Clicked="Show_Nav_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

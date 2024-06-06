@@ -13,5 +13,6 @@ namespace PDC03FinalProject.Models
         public string AchievementDescription { get; set; }
         public string AchievementImage { get; set; }
         public bool AchievementStatus { get; set; }
+        public int CategoryID { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PDC03FinalProject.Views"
              x:Class="PDC03FinalProject.Views.MySustainActivityLogsPage"
              Title="My SustainActivity Logs">
 
@@ -13,15 +14,46 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal" Padding="10">
-                                <Image Source="{Binding ImageUrl}" WidthRequest="50" HeightRequest="50" />
-                                <StackLayout Orientation="Vertical" Padding="10">
-                                    <Label Text="{Binding ActivityName}" FontAttributes="Bold" />
-                                    <Label Text="{Binding ActivityDescription}" />
-                                    <Label Text="{Binding UserActivityLength}" />
-                                    <Label Text="{Binding UserActivitySaved}" />
-                                    <Label Text="{Binding UserActivityDate, StringFormat='{0:MM/dd/yyyy}'}" />
-                                </StackLayout>
+                            <StackLayout Orientation="Vertical" Padding="10, 10, 10, 0">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Image aligned with text baseline -->
+                                    <Image Source="{Binding ImageUrl}"
+                                           Grid.Row="1" Grid.Column="0"
+                                           VerticalOptions="StartAndExpand"
+                                           HeightRequest="30"
+                                           WidthRequest="70"/>
+
+                                    <!-- Activity Name -->
+                                    <Label Text="{Binding ActivityName}"
+                                           Grid.Row="0"
+                                           Grid.Column="1"
+                                           FontAttributes="Bold"
+                                           FontSize="Subtitle"
+                                           Grid.ColumnSpan="2"/>
+
+                                    <!-- User Activity Saved Text -->
+                                    <Label Text="{Binding UserActivitySavedText}"
+                                           Grid.Row="1"
+                                           Grid.Column="1"
+                                           Grid.ColumnSpan="2"/>
+
+                                    <!-- User Activity Date -->
+                                    <Label Text="{Binding UserActivityDate, StringFormat='{0:MMMM dd, yyyy || hh:mm tt}'}"
+                                           Grid.Row="2"
+                                           Grid.Column="2"
+                                           HorizontalOptions="End"
+                                           FontSize="Micro"/>
+                                </Grid>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

@@ -11,6 +11,7 @@ namespace PDC03FinalProject.ViewModels
     public class UserActivityDetailViewModel : BaseViewModel
     {
         private readonly DatabaseService _databaseService;
+        private readonly AchievementService _achievementService;
         private double _userActivityLength;
 
         public UserActivityLog UserActivity { get; set; }
@@ -40,6 +41,7 @@ namespace PDC03FinalProject.ViewModels
         public UserActivityDetailViewModel(UserActivityLog userActivity)
         {
             _databaseService = DependencyService.Get<DatabaseService>();
+            _achievementService = DependencyService.Get<AchievementService>();
             UserActivity = userActivity;
             _userActivityLength = userActivity.UserActivityLength;
 
@@ -60,7 +62,9 @@ namespace PDC03FinalProject.ViewModels
             OnPropertyChanged(nameof(UserActivity));
             OnPropertyChanged(nameof(UserActivity.UserActivitySavedText));
 
-            
+            // Check for achievements after saving the user activity
+            await _achievementService.CheckForAchievements(userActivity);
+
             MessagingCenter.Send(this, "UserActivitySaved");
 
             await Application.Current.MainPage.DisplayAlert("Saved", "The activity has been updated.", "OK");

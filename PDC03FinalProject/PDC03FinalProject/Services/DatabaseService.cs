@@ -83,7 +83,7 @@ namespace PDC03FinalProject.Services
                     _ => throw new InvalidOperationException()
                 };
 
-                string lastCode = lastItem.ActionCode.Substring(prefix.Length);
+                string lastCode = lastItem.ActionCode[prefix.Length..];
                 int nextCode = int.Parse(lastCode) + 1;
                 return $"{prefix}{nextCode:D3}";
             }
@@ -238,8 +238,9 @@ namespace PDC03FinalProject.Services
             // Predefined achievements
             var predefinedAchievements = new List<Achievement>
             {
-                new Achievement { AchievementTitle = "1 Week Straight Bath", AchievementDescription = "Add 'Baths is to Water' activity for 1 week straight.", AchievementImage = "one_week_straight_bath.png", AchievementStatus = false },
-                new Achievement { AchievementTitle = "Save 10,000 Liters of Water", AchievementDescription = "Save a total of 10,000 liters of water using 'Baths is to Water'.", AchievementImage = "water_bath.png", AchievementStatus = false }
+                new Achievement { AchievementTitle = "1 Week Straight Bath", AchievementDescription = "Add 'Baths is to Water' activity for 1 week straight.", AchievementImage = "one_week_straight_bath.png", AchievementStatus = false, CategoryID = 1 },
+                new Achievement { AchievementTitle = "Save 10,000 Liters of Water", AchievementDescription = "Save a total of 10,000 liters of water using 'Baths is to Water'.", AchievementImage = "water_bath.png", AchievementStatus = false, CategoryID = 1 },
+                new Achievement { AchievementTitle = "Beta Tester", AchievementDescription = "Noice!'.", AchievementImage = "water_bath.png", AchievementStatus = true, CategoryID = 2 }
             };
 
             foreach (var achievement in predefinedAchievements)

@@ -72,6 +72,7 @@ namespace PDC03FinalProject.ViewModels
             log.UserActivitySaved = userActivity.UserActivitySaved;
 
             OnPropertyChanged(nameof(UserActivityLogs));
+
         }
 
         public async void DeleteUserActivity(UserActivityLog log)
