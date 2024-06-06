@@ -18,7 +18,11 @@ namespace PDC03FinalProject
             DependencyService.Register<AchievementService>();
             DependencyService.Register<IAlertService, AlertService>();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new LandingPage())
+            {
+                BarBackgroundColor = Color.FromHex("#04724D"),
+                IconImageSource = "TestIcon.png"
+            };
         }
 
         protected override async void OnStart()

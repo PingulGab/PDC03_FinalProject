@@ -42,7 +42,6 @@ namespace PDC03FinalProject.ViewModels
             _achievementService = DependencyService.Get<AchievementService>();
             Activities = new ObservableCollection<Activity>();
             Categories = new ObservableCollection<string> { "None", "Water", "Energy", "Gas", "Waste" };
-            SelectedCategory = "None";
             ActivitySelectedCommand = new Command<Activity>(async (activity) => await OnActivitySelected(activity));
             NavigateToLogsCommand = new Command(async () => await OnNavigateToLogs());
             LoadActivitiesAsync().SafeFireAndForget(false);

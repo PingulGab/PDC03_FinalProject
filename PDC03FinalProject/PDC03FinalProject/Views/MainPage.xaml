@@ -1,18 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PDC03FinalProject.Views.MainPage">
+             x:Class="PDC03FinalProject.Views.MainPage"
+             
+             BackgroundColor="#F4F7F5">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-
-            <Button Text="Go to Action List" Clicked="Btn_Nav_ActionListPage"/>
-            <Button Text="Go to MySustainActivity" Clicked="Btn_Nav_SustainActivityPage"/>
-            <Button Text="Go to Achievements" Clicked="Btn_Nav_AchievementsPage"/>
-
-            <Button Text="Show Nav" Clicked="Show_Nav_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

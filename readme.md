@@ -33,3 +33,11 @@
 
 **Ninth Commit**
 > - Added Functionality: Filtering of Achievements.
+
+**Tenth Commit**
+> - Added Bottom Tab Navigation.
+> - Added Functionality: Title of the Tab Page changes depending on the selected tab page's title.
+> - UI: Changed the Primary Color and Accent for Android.
+> - UI: Added Background Color for each page.
+> - UI: Added Styling for Picker in Handbook & SustainActivity.
+> - UI: Added Styling for Add Button in Handbook.

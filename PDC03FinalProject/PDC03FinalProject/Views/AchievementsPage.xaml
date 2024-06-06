@@ -4,7 +4,9 @@
              xmlns:vm="clr-namespace:PDC03FinalProject.ViewModels"
              xmlns:converter="clr-namespace:PDC03FinalProject.Converter"
              x:Class="PDC03FinalProject.Views.AchievementsPage"
-             Title="Achievements">
+             Title="Achievements"
+             
+             BackgroundColor="#F4F7F5">
 
     <ContentPage.Resources>
         <ResourceDictionary>

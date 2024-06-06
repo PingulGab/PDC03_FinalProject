@@ -3,18 +3,64 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:PDC03FinalProject.ViewModels"
              x:Class="PDC03FinalProject.Views.MySustainActivityPage"
-             x:Name="activityPage">
+             x:Name="activityPage"
+             
+             Title="Activities"
+             
+             BackgroundColor="#F4F7F5">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BoxFrameStyle" TargetType="Frame">
+                <Setter Property="Background" Value="Transparent"/>
+                <Setter Property="BorderColor" Value="Gray"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+            
+            <Style x:Key="PickerInsideFrameStyle" TargetType="Picker">
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="Background" Value="Transparent"/>
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <ContentPage.BindingContext>
         <vm:MySustainActivityViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <Picker ItemsSource="{Binding Categories}"
+            <Frame Style="{StaticResource BoxFrameStyle}">
+                <Picker ItemsSource="{Binding Categories}"
                     SelectedItem="{Binding SelectedCategory}" 
-                    Title="Select Category"/>
+                    Title="Select a category"
+                    Style="{StaticResource PickerInsideFrameStyle}"/>
+            </Frame>
+
             <Button Text="My SustainActivity Logs" 
+                    FontSize="15"
+                    TextColor="White"
+
+                    BackgroundColor="#2274A5"
+                    CornerRadius="15"
+                    WidthRequest="300"
+                    HeightRequest="40"
+                    Padding="0"
+                    HorizontalOptions="Center"
+
+                    AbsoluteLayout.LayoutFlags="PositionProportional"  
+                    AbsoluteLayout.LayoutBounds=".99,.95,80,50" 
                     Command="{Binding NavigateToLogsCommand}"/>
+            
             <CollectionView ItemsSource="{Binding Activities}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>

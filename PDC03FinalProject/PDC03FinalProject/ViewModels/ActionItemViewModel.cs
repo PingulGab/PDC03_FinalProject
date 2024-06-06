@@ -74,9 +74,6 @@ namespace PDC03FinalProject.ViewModels
             LoadCategories();
             AddNewItemCommand = new Command(async () => await AddNewItem());
             ItemSelectedCommand = new Command<SustainabilityHandbook>(OnItemSelected);
-
-            // Set default category to "None"
-            SelectedCategory = "None";
         }
 
         private async void LoadItems()

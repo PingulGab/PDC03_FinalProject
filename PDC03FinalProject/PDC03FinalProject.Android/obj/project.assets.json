@@ -4009,7 +4009,19 @@
             "target": "Package",
             "version": "[1.6.2, )"
           },
+          "Refractored.MvvmHelpers": {
+            "target": "Package",
+            "version": "[1.6.2, )"
+          },
           "SQLitePCLRaw.bundle_green": {
+            "target": "Package",
+            "version": "[2.1.8, )"
+          },
+          "SQLitePCLRaw.bundle_green": {
+            "target": "Package",
+            "version": "[2.1.8, )"
+          },
+          "SQLitePCLRaw.core": {
             "target": "Package",
             "version": "[2.1.8, )"
           },
@@ -4021,9 +4033,21 @@
             "target": "Package",
             "version": "[2.1.8, )"
           },
+          "SQLitePCLRaw.lib.e_sqlite3": {
+            "target": "Package",
+            "version": "[2.1.8, )"
+          },
           "SQLitePCLRaw.provider.sqlite3": {
             "target": "Package",
             "version": "[2.1.8, )"
+          },
+          "SQLitePCLRaw.provider.sqlite3": {
+            "target": "Package",
+            "version": "[2.1.8, )"
+          },
+          "System.Buffers": {
+            "target": "Package",
+            "version": "[4.5.1, )"
           },
           "System.Buffers": {
             "target": "Package",
@@ -4033,9 +4057,21 @@
             "target": "Package",
             "version": "[4.5.5, )"
           },
+          "System.Memory": {
+            "target": "Package",
+            "version": "[4.5.5, )"
+          },
           "System.Numerics.Vectors": {
             "target": "Package",
             "version": "[4.5.0, )"
+          },
+          "System.Numerics.Vectors": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          },
+          "System.Runtime.CompilerServices.Unsafe": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           },
           "System.Runtime.CompilerServices.Unsafe": {
             "target": "Package",
@@ -4045,9 +4081,21 @@
             "target": "Package",
             "version": "[1.7.0, )"
           },
+          "Xamarin.Essentials": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2196, )"
+          },
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[5.0.0.2196, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.9.172, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",
