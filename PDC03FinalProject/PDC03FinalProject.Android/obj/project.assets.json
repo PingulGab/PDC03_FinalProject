@@ -2029,7 +2029,7 @@
           "buildTransitive/monoandroid50/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "PDC03FinalProject/1.0.0": {
+      "ATLAS/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -2047,10 +2047,10 @@
           "sqlite-net-pcl": "1.9.172"
         },
         "compile": {
-          "bin/placeholder/PDC03FinalProject.dll": {}
+          "bin/placeholder/ATLAS.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PDC03FinalProject.dll": {}
+          "bin/placeholder/ATLAS.dll": {}
         }
       }
     }
@@ -3935,15 +3935,15 @@
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
-    "PDC03FinalProject/1.0.0": {
+    "ATLAS/1.0.0": {
       "type": "project",
-      "path": "../PDC03FinalProject/PDC03FinalProject.csproj",
-      "msbuildProject": "../PDC03FinalProject/PDC03FinalProject.csproj"
+      "path": "../PDC03FinalProject/ATLAS.csproj",
+      "msbuildProject": "../PDC03FinalProject/ATLAS.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v13.0": [
-      "PDC03FinalProject >= 1.0.0",
+      "ATLAS >= 1.0.0",
       "Refractored.MvvmHelpers >= 1.6.2",
       "SQLitePCLRaw.bundle_green >= 2.1.8",
       "SQLitePCLRaw.core >= 2.1.8",
@@ -3990,8 +3990,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj": {
-              "projectPath": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj"
+            "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj": {
+              "projectPath": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj"
             }
           }
         }
@@ -4009,19 +4009,7 @@
             "target": "Package",
             "version": "[1.6.2, )"
           },
-          "Refractored.MvvmHelpers": {
-            "target": "Package",
-            "version": "[1.6.2, )"
-          },
           "SQLitePCLRaw.bundle_green": {
-            "target": "Package",
-            "version": "[2.1.8, )"
-          },
-          "SQLitePCLRaw.bundle_green": {
-            "target": "Package",
-            "version": "[2.1.8, )"
-          },
-          "SQLitePCLRaw.core": {
             "target": "Package",
             "version": "[2.1.8, )"
           },
@@ -4033,21 +4021,9 @@
             "target": "Package",
             "version": "[2.1.8, )"
           },
-          "SQLitePCLRaw.lib.e_sqlite3": {
-            "target": "Package",
-            "version": "[2.1.8, )"
-          },
           "SQLitePCLRaw.provider.sqlite3": {
             "target": "Package",
             "version": "[2.1.8, )"
-          },
-          "SQLitePCLRaw.provider.sqlite3": {
-            "target": "Package",
-            "version": "[2.1.8, )"
-          },
-          "System.Buffers": {
-            "target": "Package",
-            "version": "[4.5.1, )"
           },
           "System.Buffers": {
             "target": "Package",
@@ -4057,21 +4033,9 @@
             "target": "Package",
             "version": "[4.5.5, )"
           },
-          "System.Memory": {
-            "target": "Package",
-            "version": "[4.5.5, )"
-          },
           "System.Numerics.Vectors": {
             "target": "Package",
             "version": "[4.5.0, )"
-          },
-          "System.Numerics.Vectors": {
-            "target": "Package",
-            "version": "[4.5.0, )"
-          },
-          "System.Runtime.CompilerServices.Unsafe": {
-            "target": "Package",
-            "version": "[6.0.0, )"
           },
           "System.Runtime.CompilerServices.Unsafe": {
             "target": "Package",
@@ -4081,21 +4045,9 @@
             "target": "Package",
             "version": "[1.7.0, )"
           },
-          "Xamarin.Essentials": {
-            "target": "Package",
-            "version": "[1.7.0, )"
-          },
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2196, )"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[5.0.0.2196, )"
-          },
-          "sqlite-net-pcl": {
-            "target": "Package",
-            "version": "[1.9.172, )"
           },
           "sqlite-net-pcl": {
             "target": "Package",

@@ -1,4 +1,6 @@
-﻿using PDC03FinalProject.Models;
+﻿using PDC03FinalProject.Helpers;
+using PDC03FinalProject.Models;
+using PDC03FinalProject.ViewModels;
 using System;
 using System.IO;
 using System.Reflection;
@@ -17,5 +19,12 @@ namespace PDC03FinalProject.Views
             InitializeComponent();
         }
 
+        public void ReloadData()
+        {
+            if (BindingContext is AchievementsViewModel viewModel)
+            {
+                viewModel.LoadAchievements().SafeFireAndForget(false);
+            }
+        }
     }
 }

@@ -15,5 +15,6 @@ namespace PDC03FinalProject.Models
         public string ActivityMeasurement { get; set; }
         public int CategoryID { get; set; }
         public string ImageUrl { get; set; }
+        public string ActivityPromptQuestion { get; set; }
     }
 }

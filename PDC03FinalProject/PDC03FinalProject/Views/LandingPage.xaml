@@ -12,8 +12,8 @@
             CurrentPageChanged="OnCurrentPageChanged">
 
     <!--Pages can be added as references or inline-->
-    <local:MainPage Title="Main" IconImageSource="TestIcon.png"/>
-    <local:ActionListPage Title="Handbook" IconImageSource="TestIcon.png"/>
-    <local:MySustainActivityPage Title="Activity" IconImageSource="TestIcon.png"/>
-    <local:AchievementsPage Title="Achievements" IconImageSource="TestIcon.png"/>
+    <local:MainPage Title="Main" IconImageSource="TabIcon_Home.png"/>
+    <local:ActionListPage Title="Handbook" IconImageSource="TabIcon_Handbook.png"/>
+    <local:MySustainActivityPage Title="Activity" IconImageSource="TabIcon_Activity.png"/>
+    <local:AchievementsPage Title="Achievements" IconImageSource="TabIcon_Achievements.png"/>
 </TabbedPage>

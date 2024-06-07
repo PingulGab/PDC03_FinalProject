@@ -50,7 +50,7 @@ namespace PDC03FinalProject.ViewModels
             LoadAchievements().SafeFireAndForget(false);
         }
 
-        private async Task LoadAchievements()
+        public async Task LoadAchievements()
         {
             var achievements = await _databaseService.GetAchievementsAsync();
             Achievements.Clear();

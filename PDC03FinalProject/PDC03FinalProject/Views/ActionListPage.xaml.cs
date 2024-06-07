@@ -1,4 +1,5 @@
-﻿using PDC03FinalProject.ViewModels;
+﻿using PDC03FinalProject.Helpers;
+using PDC03FinalProject.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,13 @@ namespace PDC03FinalProject.Views
             InitializeComponent();
         }
 
+        public void ReloadData()
+        {
+            if (BindingContext is ActionItemViewModel viewModel)
+            {
+                viewModel.LoadItems().SafeFireAndForget(false);
+            }
+        }
         private void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             if (e.Item != null && BindingContext is ActionItemViewModel viewModel)

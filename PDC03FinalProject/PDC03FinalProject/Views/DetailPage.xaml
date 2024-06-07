@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PDC03FinalProject.ViewModels"
              xmlns:local1="clr-namespace:PDC03FinalProject.Converter"
-             x:Class="PDC03FinalProject.Views.DetailPage">
+             x:Class="PDC03FinalProject.Views.DetailPage"
+             Title="{Binding ActionItem.Title}">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -13,51 +14,119 @@
 
     <StackLayout Padding="10">
         <Label Text="Action Code"
-               FontAttributes="Bold" />
-        <Label Text="{Binding ActionItem.ActionCode}" />
+               FontSize="Medium"
+               FontAttributes="Bold" 
+               HorizontalOptions="End"/>
+        <Label Text="{Binding ActionItem.ActionCode}" 
+               HorizontalOptions="End"/>
 
+        <!-- Shown for: Original Entry -->
+        <Label Text="{Binding ActionItem.Title}"
+               TextColor="#1E1E24"
+               FontAttributes="Bold"
+               FontSize="Title"
+               IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <!-- Shown for: User Entry -->
         <Label Text="Title"
-               FontAttributes="Bold" />
-        <!-- Shown for: Original Entry -->
-        <Label Text="{Binding ActionItem.Title}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
-        <!-- Shown for: User Entry -->
-        <Entry Text="{Binding ActionItem.Title}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+               TextColor="#1E1E24"
+               FontAttributes="Bold"
+               FontSize="Medium"
+               IsVisible="{Binding ActionItem.IsUserCreated}"/>
+        <Entry Text="{Binding ActionItem.Title}"
+               TextColor="#1E1E24"
+               FontSize="Medium"
+               IsEnabled="{Binding ActionItem.IsUserCreated}"
+               IsVisible="{Binding ActionItem.IsUserCreated}"/>
 
-        <Label Text="Description"
-               FontAttributes="Bold" />
         <!-- Shown for: Original Entry -->
-        <Label Text="{Binding ActionItem.Description}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <Label Text="{Binding ActionItem.Description}"
+               FontSize="Subtitle"
+               IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
         <!-- Shown for: User Entry -->
-        <Editor Text="{Binding ActionItem.Description}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+        <Label Text="Description"
+               TextColor="#1E1E24"
+               FontAttributes="Bold"
+               FontSize="Medium"
+               Margin="0, 20, 0, 0"
+               IsVisible="{Binding ActionItem.IsUserCreated}"/>
+        <Editor Text="{Binding ActionItem.Description}"
+                FontSize="Subtitle"
+                IsEnabled="{Binding ActionItem.IsUserCreated}"
+                IsVisible="{Binding ActionItem.IsUserCreated}"/>
 
         <Label Text="Category"
-               FontAttributes="Bold" />
-        <Label Text="{Binding ActionItem.Category}" />
+               TextColor="#1E1E24"
+               FontAttributes="Bold"
+               FontSize="Medium"
+               Margin="0, 20, 0, 0"/>
+        <!-- Shown for: Original Entry -->
+        <Label Text="{Binding ActionItem.Category}"
+               FontSize="Subtitle"
+               IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <!-- Shown for: User Entry -->
+        <Picker Title="Select Category"
+                ItemsSource="{Binding Categories}"
+                SelectedItem="{Binding ActionItem.Category}"
+                IsEnabled="{Binding ActionItem.IsUserCreated}"
+                IsVisible="{Binding ActionItem.IsUserCreated}" />
 
         <Label Text="Impact Level"
-               FontAttributes="Bold" />
+               FontSize="Medium"
+               TextColor="#1E1E24"
+               Margin="0, 20, 0, 0"
+               FontAttributes="Bold"/>
         <!-- Shown for: Original Entry -->
-        <Label Text="{Binding ActionItem.ImpactLevel}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <Label Text="{Binding ActionItem.ImpactLevel}" FontSize="Subtitle" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
         <!-- Shown for: User Entry -->
-        <Entry Text="{Binding ActionItem.ImpactLevel}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+        <Picker Title="Select Impact Level"
+                    ItemsSource="{Binding ImpactLevels}"
+                    SelectedItem="{Binding ActionItem.ImpactLevel}"
+                    IsEnabled="{Binding ActionItem.IsUserCreated}"
+                    IsVisible="{Binding ActionItem.IsUserCreated}" />
 
         <Label Text="Frequency"
-               FontAttributes="Bold" />
+               FontSize="Medium"
+               TextColor="#1E1E24"
+               Margin="0, 20, 0, 0"
+               FontAttributes="Bold"/>
         <!-- Shown for: Original Entry -->
-        <Label Text="{Binding ActionItem.Frequency}" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
+        <Label Text="{Binding ActionItem.Frequency}" FontSize="Subtitle" IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}"/>
         <!-- Shown for: User Entry -->
-        <Entry Text="{Binding ActionItem.Frequency}" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
+        <Entry Text="{Binding ActionItem.Frequency}" FontSize="Subtitle" IsEnabled="{Binding ActionItem.IsUserCreated}" IsVisible="{Binding ActionItem.IsUserCreated}"/>
 
         <Label Text="This is an original and certified entry in the handbook. You may only edit and delete entries that you have manually entered." 
                FontAttributes="Bold"
-               VerticalOptions="CenterAndExpand"
-               HorizontalOptions="CenterAndExpand"
-               FontSize="Medium"
+               VerticalOptions="EndAndExpand"
+               HorizontalOptions="EndAndExpand"
+               FontSize="Subtitle"
+               TextColor="#BBBBBB"
                HorizontalTextAlignment="Center"
                IsVisible="{Binding ActionItem.IsUserCreated, Converter={StaticResource InvertedBooleanConverter}}" />
 
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Button Text="Save"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    TextColor="White"
+                    BackgroundColor="#04724D"
+                    CornerRadius="15"
+                    WidthRequest="150"
+                    HeightRequest="40"
+                    Padding="0"
+                    HorizontalOptions="Center"
+                    Command="{Binding SaveCommand}" IsVisible="{Binding ActionItem.IsUserCreated}" />
 
-        <Button Text="Save" Command="{Binding SaveCommand}" IsVisible="{Binding ActionItem.IsUserCreated}" />
-        <Button Text="Delete" Command="{Binding DeleteCommand}" IsVisible="{Binding ActionItem.IsUserCreated}" />
+            <Button Text="Delete"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    TextColor="White"
+                    BackgroundColor="#2C2C31"
+                    CornerRadius="15"
+                    WidthRequest="150"
+                    HeightRequest="40"
+                    Padding="0"
+                    HorizontalOptions="Center"
+                    Command="{Binding DeleteCommand}" IsVisible="{Binding ActionItem.IsUserCreated}" />
+        </StackLayout>
     </StackLayout>
 </ContentPage>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bLqt5tLN+fwP0Bo31HJGtje/tGoSsY+cfEkdEml3hfzySk/7GFzuEtW5hRSsFikEEges8NRk/nNqcDmBVYgC/A==",
+  "dgSpecHash": "P/cTrtPIP/4VjQ1ioADbXN4/caI49wKbBmrzJsC8uLZyKAGbJlKaUycY9+EzloMYagNjdzy6dfvMZrHsciqshQ==",
   "success": true,
-  "projectFilePath": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj",
+  "projectFilePath": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jan\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
     "C:\\Users\\Jan\\.nuget\\packages\\sqlite-net-pcl\\1.9.172\\sqlite-net-pcl.1.9.172.nupkg.sha512",

@@ -190,7 +190,23 @@ namespace PDC03FinalProject.Services
             var predefinedHandbooks = new List<SustainabilityHandbook>
             {
                 new SustainabilityHandbook { ActionCode = "WTR001", Title = "Water Conservation", Description = "Save water by using efficient appliances.", Category = "Water", ImpactLevel = "High", Frequency = "Daily" },
-                new SustainabilityHandbook { ActionCode = "E001", Title = "Energy Saving", Description = "Use energy-efficient lighting.", Category = "Energy", ImpactLevel = "Medium", Frequency = "Weekly" }
+                new SustainabilityHandbook { ActionCode = "WTR002", Title = "Fix Leaks", Description = "Repair leaks in faucets and pipes to prevent water waste.", Category = "Water", ImpactLevel = "High", Frequency = "Monthly" },
+                new SustainabilityHandbook { ActionCode = "WTR003", Title = "Shorter Showers", Description = "Take shorter showers to reduce water usage.", Category = "Water", ImpactLevel = "Medium", Frequency = "Daily" },
+                new SustainabilityHandbook { ActionCode = "WTR004", Title = "Rainwater Harvesting", Description = "Collect and use rainwater for gardening and other non-potable uses.", Category = "Water", ImpactLevel = "High", Frequency = "Seasonal" },
+
+                new SustainabilityHandbook { ActionCode = "E001", Title = "Energy Saving", Description = "Use energy-efficient lighting.", Category = "Energy", ImpactLevel = "Medium", Frequency = "Weekly" },
+                new SustainabilityHandbook { ActionCode = "E002", Title = "Unplug Devices", Description = "Unplug electronic devices when not in use to save energy.", Category = "Energy", ImpactLevel = "Medium", Frequency = "Daily" },
+                new SustainabilityHandbook { ActionCode = "E003", Title = "Smart Thermostat", Description = "Install a smart thermostat to optimize heating and cooling.", Category = "Energy", ImpactLevel = "High", Frequency = "One-Time" },
+                new SustainabilityHandbook { ActionCode = "E004", Title = "Solar Panels", Description = "Use solar panels to generate renewable energy.", Category = "Energy", ImpactLevel = "High", Frequency = "One-Time" },
+
+                new SustainabilityHandbook { ActionCode = "GAS001", Title = "Efficient Cooking", Description = "Use energy-efficient cooking appliances.", Category = "Gas", ImpactLevel = "Medium", Frequency = "Daily" },
+                new SustainabilityHandbook { ActionCode = "GAS002", Title = "Proper Insulation", Description = "Ensure proper insulation to reduce heating and cooling needs.", Category = "Gas", ImpactLevel = "High", Frequency = "One-Time" },
+                new SustainabilityHandbook { ActionCode = "GAS003", Title = "Regular Maintenance", Description = "Perform regular maintenance on heating systems to ensure efficiency.", Category = "Gas", ImpactLevel = "High", Frequency = "Annually" },
+
+                new SustainabilityHandbook { ActionCode = "WST001", Title = "Composting", Description = "Compost organic waste to reduce landfill usage.", Category = "Waste", ImpactLevel = "High", Frequency = "Daily" },
+                new SustainabilityHandbook { ActionCode = "WST002", Title = "Recycling", Description = "Recycle paper, plastic, glass, and metals to reduce waste.", Category = "Waste", ImpactLevel = "High", Frequency = "Weekly" },
+                new SustainabilityHandbook { ActionCode = "WST003", Title = "Reusable Bags", Description = "Use reusable bags instead of single-use plastic bags.", Category = "Waste", ImpactLevel = "Medium", Frequency = "Daily" },
+                new SustainabilityHandbook { ActionCode = "WST004", Title = "Donate Items", Description = "Donate old clothes and items instead of throwing them away.", Category = "Waste", ImpactLevel = "Medium", Frequency = "Monthly" }
             };
 
             foreach (var item in predefinedHandbooks)
@@ -223,7 +239,65 @@ namespace PDC03FinalProject.Services
             // Predefined activities for Activity
             var predefinedActivities = new List<Activity>
             {
-                new Activity { ActivityID = 1, ActivityName = "Baths is to Waters", ActivityDescription = "Each bath you consume water", ActivitySavedPerMinute = 9, ActivityMeasurement = "Liters", CategoryID = 1, ImageUrl = "water_bath.png" }
+
+                //WATER
+                new Activity {
+                    ActivityID = 1,
+                    ActivityName = "Shorter Shower",
+                    ActivityDescription = "Reducing your shower time by 1 minute can save 9 liters of water.",
+                    ActivitySavedPerMinute = 9,
+                    ActivityMeasurement = "Liters of Water.",
+                    CategoryID = 1,
+                    ImageUrl = "activity_shower.png",
+                    ActivityPromptQuestion = "Enter the minutes you reduced from your usual shower time:"
+                },
+
+                new Activity {
+                    ActivityID = 2,
+                    ActivityName = "Tap Off Toothbrushing",
+                    ActivityDescription = "Turning off the tap while brushing can save up to 6 liters per minute.",
+                    ActivitySavedPerMinute = 6,
+                    ActivityMeasurement = "Liters of Water.",
+                    CategoryID = 1,
+                    ImageUrl = "activity_toothbrush.png",
+                    ActivityPromptQuestion = "Enter the time you spent brushing your teeth with the tap off in minutes:"
+                },
+
+                //WASTE
+                new Activity {
+                    ActivityID = 3,
+                    ActivityName = "Reducing Food Waste",
+                    ActivityDescription = "Reducing food waste can save about 1 kg of CO2 emissions per kilogram of food.",
+                    ActivitySavedPerMinute = 1,
+                    ActivityMeasurement = "kg of CO2.",
+                    CategoryID = 2,
+                    ImageUrl = "activity_foodwaste.png",
+                    ActivityPromptQuestion = "Enter the amount of food waste reduced in kilograms:"
+                },
+
+                //GAS
+                new Activity {
+                    ActivityID = 4,
+                    ActivityName = "Using Public Transport",
+                    ActivityDescription = "Using public transport can save about 0.2 liters of gas per kilometer compared to driving a car.",
+                    ActivitySavedPerMinute = 1,
+                    ActivityMeasurement = "Liters of Gasoline.",
+                    CategoryID = 3,
+                    ImageUrl = "activity_publictransport.png",
+                    ActivityPromptQuestion = "Enter the distance you traveled using public transport in kilometers:"
+                },
+
+                //ENERGY
+                new Activity {
+                    ActivityID = 5,
+                    ActivityName = "Unplugging Devices",
+                    ActivityDescription = "Unplugging devices can save about 1 watt per hour per device.",
+                    ActivitySavedPerMinute = 1,  // Saving 1 watt per hour, approximately 1 watt per minute
+                    ActivityMeasurement = "Watts.",
+                    CategoryID = 4,
+                    ImageUrl = "activity_unplug.png",
+                    ActivityPromptQuestion = "Enter the number of devices you unplugged and the minutes they were unplugged:"
+                },
             };
 
             foreach (var activity in predefinedActivities)
@@ -238,9 +312,15 @@ namespace PDC03FinalProject.Services
             // Predefined achievements
             var predefinedAchievements = new List<Achievement>
             {
-                new Achievement { AchievementTitle = "1 Week Straight Bath", AchievementDescription = "Add 'Baths is to Water' activity for 1 week straight.", AchievementImage = "one_week_straight_bath.png", AchievementStatus = false, CategoryID = 1 },
-                new Achievement { AchievementTitle = "Save 10,000 Liters of Water", AchievementDescription = "Save a total of 10,000 liters of water using 'Baths is to Water'.", AchievementImage = "water_bath.png", AchievementStatus = false, CategoryID = 1 },
-                new Achievement { AchievementTitle = "Beta Tester", AchievementDescription = "Noice!'.", AchievementImage = "water_bath.png", AchievementStatus = true, CategoryID = 2 }
+                new Achievement { AchievementTitle = "Beta Tester", AchievementDescription = "You are a beta tester of ATLAS.", AchievementImage = "achievement_betatester.png", AchievementStatus = true, CategoryID = 2 },
+                new Achievement { AchievementTitle = "Shorter Shower Hero I", AchievementDescription = "Save 100 liters of water by taking shorter showers.", AchievementImage = "achievement_showeri.png", AchievementStatus = false, CategoryID = 1 },
+                new Achievement { AchievementTitle = "Shorter Shower Hero II", AchievementDescription = "Save 5,000 liters of water by taking shorter showers.", AchievementImage = "achievement_showerii.png", AchievementStatus = false, CategoryID = 1 },
+                new Achievement { AchievementTitle = "Shorter Shower Hero III", AchievementDescription = "Save 10,000 liters of water by taking shorter showers.", AchievementImage = "achievement_showeriii.png", AchievementStatus = false, CategoryID = 1 },
+                new Achievement { AchievementTitle = "Toothbrush Saver", AchievementDescription = "Save 300 Liters of water by turning off the tap.", AchievementImage = "achievement_toothbrush.png", AchievementStatus = false, CategoryID = 1 },
+                new Achievement { AchievementTitle = "Food Waste Fighter", AchievementDescription = "Reduce a total of 100 kilogram food waste.", AchievementImage = "achievement_foodwaste.png", AchievementStatus = false, CategoryID = 2 },
+                new Achievement { AchievementTitle = "Public Transport Pro", AchievementDescription = "Save 200 liters of gasoline by using public transport.", AchievementImage = "achievement_publictranspo.png", AchievementStatus = false, CategoryID = 3 },
+                new Achievement { AchievementTitle = "Unplugging Expert I", AchievementDescription = "Save 500 Watts by unplugging devices.", AchievementImage = "achievement_unplugi.png", AchievementStatus = false, CategoryID = 4 },
+                new Achievement { AchievementTitle = "Unplugging Expert II", AchievementDescription = "Save 1,000 Watts by unplugging devices.", AchievementImage = "achievement_unplugii.png", AchievementStatus = false, CategoryID = 4 },
             };
 
             foreach (var achievement in predefinedAchievements)

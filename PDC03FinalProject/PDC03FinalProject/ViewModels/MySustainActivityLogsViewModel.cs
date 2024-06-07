@@ -50,7 +50,8 @@ namespace PDC03FinalProject.ViewModels
                            UserActivitySaved = ua.UserActivitySaved,
                            ActivitySavedPerMinute = a.ActivitySavedPerMinute,
                            ActivityMeasurement = a.ActivityMeasurement,
-                           ImageUrl = a.ImageUrl
+                           ImageUrl = a.ImageUrl,
+                           UserActivityImage = ua.UserActivityImage
                        };
 
             UserActivityLogs.Clear();
@@ -98,6 +99,7 @@ namespace PDC03FinalProject.ViewModels
         public double ActivitySavedPerMinute { get; set; }
         public string ActivityMeasurement { get; set; }
         public string ImageUrl { get; set; }
+        public string UserActivityImage { get; set; }
         public string UserActivitySavedText => $"{UserActivitySaved} {ActivityMeasurement}";
     }
 }

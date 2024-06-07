@@ -13,7 +13,7 @@ namespace PDC03FinalProject
             InitializeComponent();
 
             // Register the DatabaseService as a singleton
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Test26.db3");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "AtlasDB.db3");
             DependencyService.RegisterSingleton(new DatabaseService(dbPath));
             DependencyService.Register<AchievementService>();
             DependencyService.Register<IAlertService, AlertService>();
@@ -21,7 +21,6 @@ namespace PDC03FinalProject
             MainPage = new NavigationPage(new LandingPage())
             {
                 BarBackgroundColor = Color.FromHex("#04724D"),
-                IconImageSource = "TestIcon.png"
             };
         }
 

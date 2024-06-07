@@ -47,7 +47,7 @@ namespace PDC03FinalProject.ViewModels
             LoadActivitiesAsync().SafeFireAndForget(false);
         }
 
-        private async Task LoadActivitiesAsync()
+        public async Task LoadActivitiesAsync()
         {
             var activities = await _databaseService.GetActivitiesAsync();
             Activities.Clear();
@@ -81,7 +81,10 @@ namespace PDC03FinalProject.ViewModels
 
         private async Task OnActivitySelected(Activity activity)
         {
-            var result = await App.Current.MainPage.DisplayPromptAsync("Enter Time", "Enter the time in minutes:", keyboard: Keyboard.Numeric);
+            var promptQuestion = string.IsNullOrEmpty(activity.ActivityPromptQuestion) ? "Question" : activity.ActivityPromptQuestion;
+            var result = await App.Current.MainPage.DisplayPromptAsync("Question", promptQuestion, keyboard: Keyboard.Numeric);
+            if (result == null) // User clicked Cancel
+                return;
 
             // Validate the entered time
             if (!double.TryParse(result, out double minutes))
@@ -95,6 +98,7 @@ namespace PDC03FinalProject.ViewModels
                 UserActivityExecutedID = activity.ActivityID,
                 UserActivityLength = minutes,
                 UserActivitySaved = minutes * activity.ActivitySavedPerMinute,
+                UserActivityImage = activity.ImageUrl,
                 UserActivityDate = DateTime.Now
             };
 
@@ -103,8 +107,9 @@ namespace PDC03FinalProject.ViewModels
             // Check for achievements after saving the user activity
             await _achievementService.CheckForAchievements(userActivity);
 
-            await App.Current.MainPage.DisplayAlert("Wonderful!", $"You have saved {userActivity.UserActivitySaved} {activity.ActivityMeasurement}", "OK");
+            await App.Current.MainPage.DisplayAlert("Notice", $"You have saved {userActivity.UserActivitySaved} {activity.ActivityMeasurement}", "OK");
         }
+
         private async Task OnNavigateToLogs()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new MySustainActivityLogsPage());

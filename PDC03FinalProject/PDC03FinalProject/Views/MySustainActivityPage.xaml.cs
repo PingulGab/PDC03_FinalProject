@@ -1,4 +1,5 @@
-﻿using PDC03FinalProject.ViewModels;
+﻿using PDC03FinalProject.Helpers;
+using PDC03FinalProject.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,13 @@ namespace PDC03FinalProject.Views
         {
             InitializeComponent();
             BindingContext = new MySustainActivityViewModel();
+        }
+        public void ReloadData()
+        {
+            if (BindingContext is MySustainActivityViewModel viewModel)
+            {
+                viewModel.LoadActivitiesAsync().SafeFireAndForget(false);
+            }
         }
     }
 }

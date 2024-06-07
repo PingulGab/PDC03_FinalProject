@@ -1,4 +1,5 @@
-﻿using PDC03FinalProject.Models;
+﻿using PDC03FinalProject.Helpers;
+using PDC03FinalProject.Models;
 using PDC03FinalProject.Services;
 using PDC03FinalProject.Views;
 using System;
@@ -70,13 +71,23 @@ namespace PDC03FinalProject.ViewModels
         public ActionItemViewModel()
         {
             _databaseService = DependencyService.Get<DatabaseService>();
-            LoadItems();
             LoadCategories();
             AddNewItemCommand = new Command(async () => await AddNewItem());
             ItemSelectedCommand = new Command<SustainabilityHandbook>(OnItemSelected);
+            LoadItems().SafeFireAndForget(false);
+
+            MessagingCenter.Subscribe<DetailViewModel>(this, "HandbookEntrySaved", async (sender) =>
+            {
+                await LoadItems();
+            });
+
+            MessagingCenter.Subscribe<DetailViewModel>(this, "HandbookEntryDeleted", async (sender) =>
+            {
+                await LoadItems();
+            });
         }
 
-        private async void LoadItems()
+        public async Task LoadItems()
         {
             var items = await _databaseService.GetItemsAsync();
             ActionItems = new ObservableCollection<SustainabilityHandbook>(items);
@@ -92,7 +103,7 @@ namespace PDC03FinalProject.ViewModels
         {
             if (SelectedCategory == "None")
             {
-                LoadItems();
+                await LoadItems();
             }
             else
             {
@@ -162,7 +173,7 @@ namespace PDC03FinalProject.ViewModels
             };
 
             await _databaseService.SaveItemAsync(newItem);
-            LoadItems();
+            await LoadItems();
 
             // Reset the Picker value to "None"
             SelectedCategory = "None";

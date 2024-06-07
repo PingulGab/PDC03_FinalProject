@@ -1,12 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:PDC03FinalProject.ViewModels"
              x:Class="PDC03FinalProject.Views.MySustainActivityPage"
              x:Name="activityPage"
-             
-             Title="Activities"
-             
+             Title="Sustain-Activities"
              BackgroundColor="#F4F7F5">
 
     <ContentPage.Resources>
@@ -21,7 +18,7 @@
                 <Setter Property="Padding" Value="0"/>
                 <Setter Property="Margin" Value="10"/>
             </Style>
-            
+
             <Style x:Key="PickerInsideFrameStyle" TargetType="Picker">
                 <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
@@ -30,7 +27,7 @@
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="Background" Value="Transparent"/>
             </Style>
-            
+
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -46,38 +43,41 @@
                     Style="{StaticResource PickerInsideFrameStyle}"/>
             </Frame>
 
-            <Button Text="My SustainActivity Logs" 
+            <Button Text="My Sustain-Activities Logs"
+                    FontAttributes="Bold"
                     FontSize="15"
                     TextColor="White"
-
                     BackgroundColor="#2274A5"
                     CornerRadius="15"
                     WidthRequest="300"
                     HeightRequest="40"
                     Padding="0"
                     HorizontalOptions="Center"
-
-                    AbsoluteLayout.LayoutFlags="PositionProportional"  
-                    AbsoluteLayout.LayoutBounds=".99,.95,80,50" 
                     Command="{Binding NavigateToLogsCommand}"/>
-            
-            <CollectionView ItemsSource="{Binding Activities}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid Padding="10">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <Image Source="{Binding ImageUrl}" WidthRequest="50" HeightRequest="50" Aspect="AspectFill" Grid.Column="0"/>
-                            <Button Text="{Binding ActivityName}" 
-                                    Command="{Binding BindingContext.ActivitySelectedCommand, Source={x:Reference activityPage}}"
-                                    CommandParameter="{Binding .}"
-                                    Grid.Column="1"/>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+
+            <StackLayout Padding="10">
+                <CollectionView ItemsSource="{Binding Activities}">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="10" VerticalItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame CornerRadius="10" Padding="10" Margin="10" BorderColor="Gray"
+                                   HeightRequest="150" WidthRequest="80">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding BindingContext.ActivitySelectedCommand, Source={x:Reference activityPage}}"
+                                        CommandParameter="{Binding .}" />
+                                </Frame.GestureRecognizers>
+                                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Image Source="{Binding ImageUrl}" WidthRequest="70" HeightRequest="70" Aspect="AspectFill" HorizontalOptions="Center"/>
+                                    <Label Text="{Binding ActivityName}" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#2C2C31" HorizontalOptions="End" Margin="0,10,0,0"/>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

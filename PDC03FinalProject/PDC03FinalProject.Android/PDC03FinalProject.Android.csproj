@@ -34,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +48,11 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidLinkTool>r8</AndroidLinkTool>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -116,34 +125,64 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Water_Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PDC03FinalProject\PDC03FinalProject.csproj">
-      <Project>{61AA29AD-9147-4126-A9B6-38D232817B9B}</Project>
-      <Name>PDC03FinalProject</Name>
+    <ProjectReference Include="..\PDC03FinalProject\ATLAS.csproj">
+      <Project>{EC682402-5401-44BD-AC70-908113326255}</Project>
+      <Name>ATLAS</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\water_bath.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\lock.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\save_10000_liters.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\TabIcon_Handbook.png" />
+    <AndroidResource Include="Resources\drawable\TabIcon_Home.png" />
+    <AndroidResource Include="Resources\drawable\TabIcon_Achievements.png" />
+    <AndroidResource Include="Resources\drawable\TabIcon_Activity.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\one_week_straight_bath.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\water_bath.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\TestIcon.png" />
+    <AndroidResource Include="Resources\drawable\Energy_Icon.png" />
+    <AndroidResource Include="Resources\drawable\Gas_Icon.png" />
+    <AndroidResource Include="Resources\drawable\Waste_Icon.png" />
+    <AndroidResource Include="Resources\drawable\Water_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\achievement_betatester.png" />
+    <AndroidResource Include="Resources\drawable\achievement_foodwaste.png" />
+    <AndroidResource Include="Resources\drawable\achievement_publictranspo.png" />
+    <AndroidResource Include="Resources\drawable\achievement_showeri.png" />
+    <AndroidResource Include="Resources\drawable\achievement_showerii.png" />
+    <AndroidResource Include="Resources\drawable\achievement_showeriii.png" />
+    <AndroidResource Include="Resources\drawable\achievement_toothbrush.png" />
+    <AndroidResource Include="Resources\drawable\achievement_unplugi.png" />
+    <AndroidResource Include="Resources\drawable\achievement_unplugii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Logo_Atlas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\activity_foodwaste.png" />
+    <AndroidResource Include="Resources\drawable\activity_publictransport.png" />
+    <AndroidResource Include="Resources\drawable\activity_shower.png" />
+    <AndroidResource Include="Resources\drawable\activity_toothbrush.png" />
+    <AndroidResource Include="Resources\drawable\activity_unplug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\atlas_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\atlas_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\atlas_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\atlas_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\atlas_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

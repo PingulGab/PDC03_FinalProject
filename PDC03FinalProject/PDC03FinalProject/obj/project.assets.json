@@ -876,9 +876,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj",
-      "projectName": "PDC03FinalProject",
-      "projectPath": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj",
+      "projectUniqueName": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj",
+      "projectName": "ATLAS",
+      "projectPath": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj",
       "packagesPath": "C:\\Users\\Jan\\.nuget\\packages\\",
       "outputPath": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\obj\\",
       "projectStyle": "PackageReference",

@@ -81,7 +81,7 @@ target triple = "aarch64-unknown-linux-android"
 @__app_environment_variables_n_1.2 = internal constant [15 x i8] c"MONO_LOG_LEVEL\00", align 1
 @__app_environment_variables_v_1.3 = internal constant [5 x i8] c"info\00", align 1
 @__app_environment_variables_n_2.4 = internal constant [17 x i8] c"XAMARIN_BUILD_ID\00", align 1
-@__app_environment_variables_v_2.5 = internal constant [37 x i8] c"5f82073f-0304-4a17-b99c-2b1f84bb2af1\00", align 1
+@__app_environment_variables_v_2.5 = internal constant [37 x i8] c"020053ac-4546-4b46-b9e3-0e6e215f5b36\00", align 1
 @__app_environment_variables_n_3.6 = internal constant [28 x i8] c"XA_HTTP_CLIENT_HANDLER_TYPE\00", align 1
 @__app_environment_variables_v_3.7 = internal constant [41 x i8] c"Xamarin.Android.Net.AndroidClientHandler\00", align 1
 @__app_environment_variables_n_4.8 = internal constant [16 x i8] c"XA_TLS_PROVIDER\00", align 1
@@ -106,7 +106,7 @@ target triple = "aarch64-unknown-linux-android"
 
 ; app_system_properties
 @app_system_properties = local_unnamed_addr constant [0 x i8*] zeroinitializer, align 8
-@__ApplicationConfig_android_package_name.0 = internal constant [34 x i8] c"com.companyname.pdc03finalproject\00", align 1
+@__ApplicationConfig_android_package_name.0 = internal constant [12 x i8] c"ATLAS.pdc03\00", align 1
 
 ; application_config
 @application_config = local_unnamed_addr constant %struct.ApplicationConfig {
@@ -135,7 +135,7 @@ target triple = "aarch64-unknown-linux-android"
 	i32 0, ; jni_remapping_replacement_type_count
 	i32 0, ; jni_remapping_replacement_method_index_entry_count
 	i32 0, ; mono_components_mask
-	i8* getelementptr inbounds ([34 x i8], [34 x i8]* @__ApplicationConfig_android_package_name.0, i32 0, i32 0); android_package_name
+	i8* getelementptr inbounds ([12 x i8], [12 x i8]* @__ApplicationConfig_android_package_name.0, i32 0, i32 0); android_package_name
 }, align 8
 
 @__DSOCacheEntry_name.1 = internal constant [18 x i8] c"libmono-native.so\00", align 1

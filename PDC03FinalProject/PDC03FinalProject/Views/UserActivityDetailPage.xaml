@@ -7,23 +7,69 @@
 
     <ContentPage.Content>
         <StackLayout Padding="10">
-            <Label Text="Activity Name" FontAttributes="Bold"/>
-            <Label Text="{Binding UserActivity.ActivityName}"/>
-            <Label Text="Activity Description" FontAttributes="Bold"/>
-            <Label Text="{Binding UserActivity.ActivityDescription}"/>
-            <Label Text="Saved Per Minute" FontAttributes="Bold"/>
-            <Label Text="{Binding UserActivity.ActivitySavedPerMinute}"/>
-            <Label Text="Measurement" FontAttributes="Bold"/>
-            <Label Text="{Binding UserActivity.ActivityMeasurement}"/>
-            <Label Text="Date" FontAttributes="Bold"/>
-            <Label Text="{Binding UserActivity.UserActivityDate, StringFormat='{0:MM/dd/yyyy}'}"/>
-            <Label Text="Length (Minutes)" FontAttributes="Bold"/>
-            <Entry Text="{Binding UserActivityLength}" Keyboard="Numeric"/>
-            <Label Text="Saved" FontAttributes="Bold"/>
-            <Label Text="{Binding UserActivity.UserActivitySavedText}"/>
+            <Grid HorizontalOptions="Center">
+                <Frame WidthRequest="200"
+                       HeightRequest="200"
+                       BackgroundColor="Transparent"
+                       BorderColor="LightGray" CornerRadius="30"
+                       
+                       Grid.Column="0" Grid.ColumnSpan="3">
+                    <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
+                        <Image Source="{Binding UserActivity.UserActivityImage}" HeightRequest="200" WidthRequest="200"/>
+                    </StackLayout>
+                </Frame>
 
-            <Button Text="Save" Command="{Binding SaveCommand}"/>
-            <Button Text="Delete" Command="{Binding DeleteCommand}" TextColor="Red"/>
+                <StackLayout Orientation="Vertical" HorizontalOptions="End" Grid.Column="3">
+                    <Label Text="Date Added" FontAttributes="Bold" HorizontalOptions="End"/>
+                    <Label Text="{Binding UserActivity.UserActivityDate, StringFormat='{0:MM/dd/yyyy}'}"
+                           FontSize="Small"/>
+                </StackLayout>
+            </Grid>
+
+            <Label Text="{Binding UserActivity.ActivityName}"
+                           TextColor="#2C2C31"
+                           FontSize="40"
+                           FontAttributes="Bold"/>
+            
+            <Label Text="{Binding UserActivity.ActivityDescription}"
+                   FontSize="Subtitle"/>
+
+            <Label Text="Saved Amount" FontAttributes="Bold"
+                   FontSize="Medium"
+                   Margin="0, 20, 0 ,0"/>
+            <Label Text="{Binding UserActivity.UserActivitySavedText}"
+                   FontSize="Subtitle"/>
+
+            <Label Text="Activity Length" FontAttributes="Bold"
+                   FontSize="Medium"
+                   Margin="0, 20, 0 ,0"/>
+            <Entry Text="{Binding UserActivityLength}" Keyboard="Numeric"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Button Text="Save" 
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        TextColor="White"
+                        BackgroundColor="#04724D"
+                        CornerRadius="15"
+                        WidthRequest="150"
+                        HeightRequest="40"
+                        Padding="0"
+                        HorizontalOptions="Center"
+                        Command="{Binding SaveCommand}"/>
+
+                <Button Text="Delete"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        TextColor="White"
+                        BackgroundColor="#2C2C31"
+                        CornerRadius="15"
+                        WidthRequest="150"
+                        HeightRequest="40"
+                        Padding="0"
+                        HorizontalOptions="Center"
+                        Command="{Binding DeleteCommand}"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

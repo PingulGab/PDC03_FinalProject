@@ -12,6 +12,7 @@ namespace PDC03FinalProject.Models
         public int UserActivityExecutedID { get; set; }
         public double UserActivityLength { get; set; }
         public double UserActivitySaved { get; set; }
+        public string UserActivityImage { get; set; }
         public DateTime UserActivityDate { get; set; }
     }
 }

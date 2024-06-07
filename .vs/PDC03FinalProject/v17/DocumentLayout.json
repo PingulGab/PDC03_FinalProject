@@ -3,24 +3,76 @@
   "WorkspaceRootPath": "C:\\repos\\PDC03FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\landingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\landingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\landingpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\landingpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\useractivitydetailpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\useractivitydetailpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\mysustainactivitypage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\mysustainactivitypage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\mysustainactivitypage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\mysustainactivitypage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\actionlistpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\actionlistpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\mysustainactivitylogspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\mysustainactivitylogspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\viewmodels\\mysustainactivityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\viewmodels\\mysustainactivityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\landingpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\landingpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\detailpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\detailpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\actionlistpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\actionlistpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\views\\achievementspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\views\\achievementspage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\viewmodels\\useractivitydetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\viewmodels\\useractivitydetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\viewmodels\\mysustainactivityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\viewmodels\\mysustainactivityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\viewmodels\\mysustainactivitylogsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\viewmodels\\mysustainactivitylogsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\viewmodels\\detailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\viewmodels\\detailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\viewmodels\\actionitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\viewmodels\\actionitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\viewmodels\\achievementsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\viewmodels\\achievementsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\services\\achievementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\services\\achievementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|c:\\repos\\pdc03finalproject\\pdc03finalproject\\pdc03finalproject\\models\\achievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC682402-5401-44BD-AC70-908113326255}|PDC03FinalProject\\PDC03FinalProject\\ATLAS.csproj|solutionrelative:pdc03finalproject\\pdc03finalproject\\models\\achievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +82,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ce0010b1-93a1-33bb-8d9c-bcc1bf6c4873}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
@@ -55,53 +111,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LandingPage.xaml.cs",
-              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml.cs",
-              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml.cs",
-              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml.cs",
-              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAUwBUAAAAqAAAA",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\App.xaml.cs",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\App.xaml.cs",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\App.xaml.cs",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T15:07:23.831Z",
+              "WhenOpened": "2024-06-06T23:45:56.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LandingPage.xaml",
-              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml",
-              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml",
-              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml",
-              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Title": "UserActivityDetailPage.xaml",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\UserActivityDetailPage.xaml",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\UserActivityDetailPage.xaml",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\UserActivityDetailPage.xaml",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\UserActivityDetailPage.xaml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAiwEsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-06T15:05:09.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ActionListPage.xaml",
-              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\ActionListPage.xaml",
-              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\ActionListPage.xaml",
-              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\ActionListPage.xaml",
-              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\ActionListPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-06T14:55:04.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MySustainActivityViewModel.cs",
-              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityViewModel.cs",
-              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityViewModel.cs",
-              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityViewModel.cs",
-              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityViewModel.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAIA8wDEAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T14:58:16.348Z",
+              "WhenOpened": "2024-06-06T23:45:44.534Z",
               "EditorCaption": ""
             },
             {
@@ -112,9 +142,204 @@
               "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\MySustainActivityPage.xaml",
               "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\MySustainActivityPage.xaml",
               "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\MySustainActivityPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwFMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-06T14:38:32.09Z",
+              "WhenOpened": "2024-06-06T23:45:38.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MySustainActivityLogsPage.xaml",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\MySustainActivityLogsPage.xaml",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\MySustainActivityLogsPage.xaml",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\MySustainActivityLogsPage.xaml",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\MySustainActivityLogsPage.xaml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAQwEMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T23:45:31.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\MainPage.xaml",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\MainPage.xaml",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\MainPage.xaml",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T23:45:26.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LandingPage.xaml",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\LandingPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T23:45:21.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DetailPage.xaml",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\DetailPage.xaml",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\DetailPage.xaml",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\DetailPage.xaml",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\DetailPage.xaml",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAQwIQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T23:45:13.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ActionListPage.xaml",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\ActionListPage.xaml",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\ActionListPage.xaml",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\ActionListPage.xaml",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\ActionListPage.xaml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAQwF4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T23:45:03.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AchievementsPage.xaml",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\AchievementsPage.xaml",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Views\\AchievementsPage.xaml",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Views\\AchievementsPage.xaml",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Views\\AchievementsPage.xaml",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-06T23:44:54.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserActivityDetailViewModel.cs",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\UserActivityDetailViewModel.cs",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\UserActivityDetailViewModel.cs",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\UserActivityDetailViewModel.cs",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\UserActivityDetailViewModel.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAuwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:44:42.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MySustainActivityViewModel.cs",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityViewModel.cs",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityViewModel.cs",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityViewModel.cs",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityViewModel.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAiwHUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:44:33.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MySustainActivityLogsViewModel.cs",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityLogsViewModel.cs",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityLogsViewModel.cs",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityLogsViewModel.cs",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\MySustainActivityLogsViewModel.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAGkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:44:24.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DetailViewModel.cs",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\DetailViewModel.cs",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\DetailViewModel.cs",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\DetailViewModel.cs",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\DetailViewModel.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAswE8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:44:12.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ActionItemViewModel.cs",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\ActionItemViewModel.cs",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\ActionItemViewModel.cs",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\ActionItemViewModel.cs",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\ActionItemViewModel.cs",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAiwMQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:44:04.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AchievementsViewModel.cs",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\AchievementsViewModel.cs",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\AchievementsViewModel.cs",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\ViewModels\\AchievementsViewModel.cs",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\ViewModels\\AchievementsViewModel.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAqwIEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:43:54.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Services\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Services\\DatabaseService.cs",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Services\\DatabaseService.cs",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Services\\DatabaseService.cs",
+              "ViewState": "AQIAACABAAAAAAAAAAAAAE8BAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:43:49.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AchievementService.cs",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Services\\AchievementService.cs",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Services\\AchievementService.cs",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Services\\AchievementService.cs",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Services\\AchievementService.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAAAJ8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:43:45.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Achievement.cs",
+              "DocumentMoniker": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Models\\Achievement.cs",
+              "RelativeDocumentMoniker": "PDC03FinalProject\\PDC03FinalProject\\Models\\Achievement.cs",
+              "ToolTip": "C:\\repos\\PDC03FinalProject\\PDC03FinalProject\\PDC03FinalProject\\Models\\Achievement.cs",
+              "RelativeToolTip": "PDC03FinalProject\\PDC03FinalProject\\Models\\Achievement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:42:34.814Z",
               "EditorCaption": ""
             }
           ]
